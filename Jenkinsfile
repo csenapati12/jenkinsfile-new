@@ -7,7 +7,7 @@ node()
     }
     try	{
 	   // echo  "Branch Name is ${BRANCH_NAME}" 
-	        if (enn.BRANCH_NAME == 'develop') 
+	        if (env.BRANCH_NAME == 'develop') 
 			{
 			 print "Building the develop branch "
 			 developBranch()
