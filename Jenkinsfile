@@ -69,10 +69,10 @@ def loadProperties() {
         checkout scm
 	echo "Immediate one ${userFlag}"
 	echo "${params.Greeting} World!"
-	//echo  "Branch Name is ${BRANCH_NAME}"
-       // properties = new Properties()
-       // File propertiesFile = new File("${workspace}/gradle.properties")
-       // properties.load(propertiesFile.newDataInputStream())
+	echo  "Branch Name is ${BRANCH_NAME}"
+        properties = new Properties()
+        File propertiesFile = new File("${workspace}/gradle.properties")
+        properties.load(propertiesFile.newDataInputStream())
 	
        
   
