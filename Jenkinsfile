@@ -69,7 +69,7 @@ def loadProperties() {
         checkout scm
 	echo "Immediate one ${userFlag}"
 	echo "${params.Greeting} World!"
-	//echo  "Branch Name is ${BRANCH_NAME}"
+	echo  "WORKSPACE NAME Name is ${workspace}"
         properties = new Properties()
         File propertiesFile = new File("${workspace}/gradle.properties")
         properties.load(propertiesFile.newDataInputStream())
