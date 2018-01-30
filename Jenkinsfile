@@ -2,9 +2,10 @@ def loadProperties() {
     node {
         checkout scm
         properties = new Properties()
-        File propertiesFile = new File("${workspace}/build.properties")
+        File propertiesFile = new File("${workspace}/gradle.properties")
         properties.load(propertiesFile.newDataInputStream())
         echo "Immediate one ${properties.repo}"
+	    echo "Immediate one ${properties.java}"
     }
 }
 
@@ -29,7 +30,7 @@ pipeline {
 
             steps {
                 // works fine. properties is available everywhere
-                echo properties.branch
+               echo properties.branch
             }
 
         }
