@@ -4,8 +4,8 @@ def loadProperties() {
         properties = new Properties()
         File propertiesFile = new File("${workspace}/gradle.properties")
         properties.load(propertiesFile.newDataInputStream())
-        echo "Immediate one ${properties.repo}"
-	    echo "Immediate one ${properties.java}"
+        //echo "Immediate one ${properties.repo}"
+	    echo "Immediate one ${java}"
     }
 }
 
